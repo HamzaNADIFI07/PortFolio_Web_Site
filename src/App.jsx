@@ -48,7 +48,9 @@ function App() {
       >
         <Contact />
       </motion.div>
-      <Footer/>
+      <div className="container">
+        <Footer/>
+      </div>
     </>
   );
 }

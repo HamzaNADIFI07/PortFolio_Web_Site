@@ -10,7 +10,13 @@
   min-height: 100vh;
   min-width: 100vw;
 }
-
+.container{
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -45,4 +51,68 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* 🌍 Écrans très larges (TV, grands moniteurs) */
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* 🖥 Écrans standards (PC) */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
+  .title {
+    font-size: 3em;
+  }
+}
+
+/* 💻 Tablettes (Portrait et paysage) */
+@media screen and (max-width: 992px) {
+  .container {
+    width: 95%;
+  }
+  .title {
+    font-size: 2.5em;
+  }
+  .barre {
+    flex-direction: column; /* Mettre la barre de navigation en colonne */
+  }
+  .button {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* 📱 Téléphones (Portrait) */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+  .title {
+    font-size: 2em;
+    text-align: center;
+  }
+  .barre {
+    flex-direction: column;
+  }
+  .button {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+/* 📱 Petits téléphones */
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 1.8em;
+  }
+  .container {
+    padding: 10px;
+  }
 }

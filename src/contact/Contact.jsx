@@ -2,7 +2,7 @@ import Style from "./ContactStyles.module.css"
 
 import phoneIcon from "../assets/contact/icons8-téléphone-50.png"
 import emailIcon from "../assets/contact/icons8-nouveau-message-50.png"
-import locationIcon from "../assets/contact/icons8-marqueur-50.png"
+import locationIcon from "../assets/contact/icons8-emplacement-50.png"
 
 
 function Contact() {
@@ -27,7 +27,7 @@ function Contact() {
                 </div>
                 <div className={Style.parag}>
                     <img src={locationIcon} alt="location" />
-                    <div className={Style.locationInfo}>
+                    <div className={Style.locInfo}>
                         <div className={Style.paragTitle}>Location</div>
                         <div className={Style.paragInfo}>Hauts-de-France | Île-de-France</div>
                     </div>
@@ -52,7 +52,9 @@ function Contact() {
                         <label htmlFor="message" hidden>Message</label>
                         <textarea name='message' id='message' placeholder='Message' required></textarea>
                     </div>
-                    <input className={Style.hoverbtn}type="submit" value="Submit" name="sent"/>
+                    <div className={Style.buttonSubmit}>
+                        <input className={Style.hoverbtn}type="submit" value="Submit" name="sent"/>
+                    </div>
                 </form>
             </div>
         </div>
