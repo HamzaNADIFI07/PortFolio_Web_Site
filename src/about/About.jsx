@@ -6,6 +6,7 @@ import gmailIcon from '../assets/socialMedia/icons8-gmail-100.png'
 
 import CV from '../assets/HamzaNadifiResume.pdf'
 
+
 function About() {
 
   return (
