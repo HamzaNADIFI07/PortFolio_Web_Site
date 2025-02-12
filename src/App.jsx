@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import "./App.css"
-import Barre from "./barre/barre.jsx"
+import Barre from "./barre/Barre.jsx"
 import About from "./about/About.jsx"
 import Skills from "./skills/Skills.jsx"
 import Projects from "./projects/Projects.jsx"
