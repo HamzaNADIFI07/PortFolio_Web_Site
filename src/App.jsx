@@ -7,6 +7,7 @@ import Projects from "./projects/Projects.jsx"
 import Contact from "./contact/Contact.jsx"
 import Footer from "./footer/Footer.jsx"
 
+//test
 
 function App() {
   return (
