@@ -20,8 +20,6 @@ function Barre() {
             <button type="button" onClick={() => scrollToSection('nom')}>About</button>
             <button type="button" onClick={() => scrollToSection('skills')}>Skills</button>
             <button type="button" onClick={() => scrollToSection('projects')}>Projects</button>
-            <button type="button" onClick={() => scrollToSection('experiences')}>Experiences</button>
-            <button type="button" onClick={() => scrollToSection('certifications')}>Certifications</button>
             <button type="button" onClick={() => scrollToSection('contact')}>Contact</button>
         </div>
     </div>

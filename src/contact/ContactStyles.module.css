@@ -1,0 +1,101 @@
+.title{
+    font-size: 5em;
+    font-family: "Academy Engraved LET", sans-serif;
+    color: white;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.contactSection{
+    display: flex;
+}
+.parag img{
+    background-color: #4D4040;
+    padding: 20px;
+    border-radius: 30px 30px 0px 30px;
+}
+.parag{
+    display: flex;
+    margin-bottom: 4em;
+    color: white;
+    font-size: 2em;
+    font-family: "Academy Engraved LET", sans-serif;
+    text-align: left;
+    margin-left: 4em;
+}
+.numberInfo , .emailInfo , .locationInfo {
+    margin-left: 1em;
+}
+.paragTitle {
+    text-shadow: 2px 2px 10px white;
+}
+
+
+
+.form {
+    width: 50%;
+    padding: 2em;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 13em;
+    text-align: center;
+}
+
+.form input, .form textarea {
+    width: 170%;
+    padding: 30px;
+    margin-bottom: 1.5em;
+    font-size: 1.2em;
+    font-family: "Academy Engraved LET", sans-serif;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.form input::placeholder, .form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form input:focus, .form textarea:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.form textarea {
+    height: 120px;
+    resize: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.5em;
+    font-family: "Academy Engraved LET", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #4D4040;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    height: 60px;
+    line-height: 1.7;
+    margin-left: 5em;
+}
+
+
+input[type="submit"]:hover {
+    color: white;
+    box-shadow: 0px 3px 10px rgba(8, 8, 8, 0.4);
+}
+
+.info, .form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

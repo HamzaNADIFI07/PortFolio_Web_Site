@@ -1,9 +1,9 @@
 .projectCard {
-    background-color: #dbd8cb; /* Fond plus moderne */
+    background-color: #dbd8cb;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajout d'une ombre */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
     margin-top: 7em;
     width: calc(30% - 40px);
@@ -16,11 +16,11 @@
 }
 
 .projectCard:hover {
-    transform: scale(1.05); /* Effet au survol */
+    transform: scale(1.05);
 }
 
 .projectImg {
-    width: 250px;
+    width: 350px;
     border-radius: 8px;
 
 }
