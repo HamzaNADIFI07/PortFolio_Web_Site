@@ -3,6 +3,10 @@
     background-repeat: no-repeat;
     padding: 10px;
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .skillsContent1 , .skillsContent2{
@@ -11,6 +15,7 @@
     justify-content: center;
     gap: 20px;
     padding: 0 20px;
+    width: 100%;
 }
 .title{
     font-size: clamp(2.5em, 5vw, 5em);
@@ -119,8 +124,17 @@
 }
 
 @media screen and (max-width: 480px) {
+    .skills {
+        padding: 5px;
+    }
+
+    .skillsContent1, .skillsContent2 {
+        padding: 0 10px;
+    }
+
     .ligne {
         justify-content: space-around;
+        gap: 10px;
     }
 
     .ligne > * {
