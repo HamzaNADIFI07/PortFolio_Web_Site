@@ -21,6 +21,13 @@
     margin-left: 2em;
     top: 5px;
 }
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
 .button {
     display: flex;
     align-items: center;
@@ -28,8 +35,8 @@
     margin-right: 20px;
     margin-top: 10px;
     gap: 70px;
-    
 }
+
 .button button {
     background-color: #4D4040;
     border: none;
@@ -42,29 +49,12 @@
     margin: 20px;
     height: 60px;
     line-height: 1;
-    
-    
-
-    
-}
-
-.button button::after {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transition: all 0.3s ease;
 }
 
 .button button:hover {
     transform: translateY(-3px);
     border-bottom: 2px solid black;
-}
-
-.button button:hover::after {
-    width: 100%;
-    left: 0;
 }
 
 .menu {
@@ -132,6 +122,7 @@
         margin: 0;
         gap: 20px;
         border-radius: 0 0 20px 20px;
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
     }
 
     .button.active {
@@ -165,7 +156,9 @@
     }
 
     .button button {
-        font-size: 18px;
+        font-size: 16px;
+        padding: 8px 8px;
         height: 35px;
+        margin: 5px;
     }
 }
