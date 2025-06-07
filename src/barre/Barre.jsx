@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import Style from './BarreStyles.module.css'
-import logo from '../assets/logo/logo.png'
+import { useState } from 'react';
+import Style from './BarreStyles.module.css';
+import logo from '../assets/logo/logo.png';
 
 function Barre() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,22 +16,24 @@ function Barre() {
 
   return (
     <div className={Style.barre}>
-        <div className={Style.logo}>
-            <img src={logo} alt="logo" />
-        </div>
-        <div className={`${Style.button} ${isMenuOpen ? Style.active : ''}`}>
-            <button type="button" onClick={() => scrollToSection('about')}>About</button>
-            <button type="button" onClick={() => scrollToSection('skills')}>Skills</button>
-            <button type="button" onClick={() => scrollToSection('projects')}>Projects</button>
-            <button type="button" onClick={() => scrollToSection('contact')}>Contact</button>
-        </div>
-        <div className={Style.menu} onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+      <div className={Style.logo}>
+        <img src={logo} alt="logo" />
+      </div>
+
+      <div className={`${Style.button} ${isMenuOpen ? Style.active : ''}`}>
+        <button onClick={() => scrollToSection('about')}>About</button>
+        <button onClick={() => scrollToSection('skills')}>Skills</button>
+        <button onClick={() => scrollToSection('projects')}>Projects</button>
+        <button onClick={() => scrollToSection('contact')}>Contact</button>
+      </div>
+
+      <div className={Style.menu} onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Barre
+export default Barre;
