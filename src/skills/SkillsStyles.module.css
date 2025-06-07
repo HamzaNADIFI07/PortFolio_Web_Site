@@ -1,35 +1,72 @@
+.skills{
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    width: 100%;
+}
+
 .skillsContent1 , .skillsContent2{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
 }
 .title{
-    font-size: 5em;
+    font-size: clamp(2.5em, 5vw, 5em);
     font-family: "Academy Engraved LET", sans-serif;
     color: white;
-    margin-top: 2em;
-
+    text-align: center;
+    margin: 1em 0;
 }
 
-
 .programmingLanguages , .frameworks , .databases , .toolsDevelopment{
-    width: 50%;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h2{
-        font-size: 3em;
+        font-size: clamp(1.8em, 3vw, 3em);
         font-family: "Academy Engraved LET", sans-serif;
         color: white;
         margin-bottom: 0.5em;
         margin-top: 1em;
+        text-align: center;
     }
 }
-.icons img {
+.card {
     margin: 20px;
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 20px;
     padding: 20px;
     transition: transform 0.2s ease;
     box-shadow: 0 50px 50px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    height: 200px;
+    background: linear-gradient(45deg,#dbd8cb,rgb(188, 183, 176));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card p{
+    font-size: clamp(1.1em, 1.5vw, 1.5em);
+    font-family: "Academy Engraved LET", sans-serif;
+    color: black;
+    text-align: center;
+    margin: 10px 0;
+}
+.ligne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
 }
 
-.icons img:hover {
+.card:hover {
     animation: icon-hover 0.7s ease;
 }
 
@@ -42,6 +79,49 @@
     }
     100% {
         transform: scale(1);
+    }
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    .card {
+        width: 130px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ligne {
+        justify-content: space-around;
+    }
+
+    .ligne > * {
+        flex: 0 0 calc(33.333% - 20px);
+        max-width: calc(33.333% - 20px);
+    }
+
+    .card {
+        width: 120px;
+        height: 160px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ligne {
+        justify-content: space-around;
+    }
+
+    .ligne > * {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+
+    .card {
+        width: 110px;
+        height: 150px;
+        padding: 10px;
+        margin: 10px;
     }
 }
 

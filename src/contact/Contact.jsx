@@ -7,7 +7,7 @@ import locationIcon from "../assets/contact/icons8-emplacement-50.png"
 
 function Contact() {
   return (
-    <div className={Style.container}>
+    <div className={Style.contact}>
         <h1 className={Style.title} id="contact">Contact</h1>
         <div className={Style.contactSection}>
             <div className={Style.info}>
@@ -29,7 +29,7 @@ function Contact() {
                     <img src={locationIcon} alt="location" />
                     <div className={Style.locInfo}>
                         <div className={Style.paragTitle}>Location</div>
-                        <div className={Style.paragInfo}>Hauts-de-France | Île-de-France</div>
+                        <div className={Style.paragInfo}>Île-de-France</div>
                     </div>
                 </div>
             </div>

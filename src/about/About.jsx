@@ -11,7 +11,7 @@ function About() {
 
   return (
     <div className={Style.about}>
-        <h1 id='nom'>Hamza NADIFI</h1>
+        <h1 className={Style.nom}>Hamza NADIFI</h1>
         <h2>Computer science student</h2>
         <div className={Style.icons}>
             <a href="https://github.com/HamzaNADIFI07">

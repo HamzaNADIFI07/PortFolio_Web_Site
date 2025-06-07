@@ -1,3 +1,9 @@
+.contact{
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    width: 100%;
+}
 .title{
     font-size: 5em;
     font-family: "Academy Engraved LET", sans-serif;
@@ -7,6 +13,9 @@
 }
 .contactSection{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
 }
 .parag img{
     background-color: #4D4040;
@@ -31,9 +40,11 @@
 }
 
 .buttonSubmit{
-    position: absolute;
-    left: 65%;
-    margin-left: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
 }
 
 .form {
@@ -43,11 +54,12 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-right: calc(50% - 600px);
+    width: 100%;
+    max-width: 600px;
 }
 
 .form input, .form textarea {
-    width: 170%;
+    width: 100%;
     padding: 30px;
     margin-bottom: 1.5em;
     font-size: 1.2em;
@@ -90,15 +102,67 @@ input[type="submit"] {
     line-height: 1.7;
 }
 
-
 input[type="submit"]:hover {
     color: white;
     box-shadow: 0px 3px 10px rgba(8, 8, 8, 0.4);
 }
 
 .info, .form {
-    width: 50%;
+    width: 100%;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .contactSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info, .form {
+        width: 90%;
+    }
+
+    .parag {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 3em;
+    }
+
+    .parag {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .form input, .form textarea {
+        padding: 20px;
+        font-size: 1em;
+    }
+
+    input[type="submit"] {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 2.5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .parag {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .parag img {
+        padding: 15px;
+    }
 }

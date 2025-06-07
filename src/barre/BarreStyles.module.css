@@ -6,20 +6,20 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: calc(100% - 80px);
-    margin: 40px;
+    width: calc(100% - 40px);
+    margin: 20px;
     box-sizing: border-box;
     border-radius: 20px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
-    
+    z-index: 1000;
 }
 
 .logo {
     display: flex;
-    height: 80px; /* Ajuste la hauteur du logo pour mieux s'aligner */
+    height: 80px;
     width: 100px;
-    margin-left: 3em;
-    top: 5px; /* Décale légèrement vers le haut si nécessaire */
+    margin-left: 2em;
+    top: 5px;
 }
 .button {
     display: flex;
@@ -65,4 +65,107 @@
 .button button:hover::after {
     width: 100%;
     left: 0;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.menu span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1200px) {
+    .barre {
+        width: calc(100% - 40px);
+        margin: 20px;
+    }
+
+    .button {
+        gap: 40px;
+    }
+
+    .button button {
+        font-size: 24px;
+        padding: 15px 15px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .barre {
+        width: calc(100% - 20px);
+        margin: 10px;
+        padding: 0 10px;
+    }
+
+    .logo {
+        height: 60px;
+        width: 80px;
+        margin-left: 1em;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .button {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: #4D4040;
+        padding: 20px;
+        margin: 0;
+        gap: 20px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .button.active {
+        display: flex;
+    }
+
+    .button button {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        font-size: 20px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .barre {
+        width: calc(100% - 10px);
+        margin: 5px;
+    }
+
+    .logo {
+        height: 50px;
+        width: 70px;
+        margin-left: 0.5em;
+    }
+
+    .menu {
+        width: 25px;
+        height: 18px;
+    }
+
+    .button button {
+        font-size: 18px;
+        height: 35px;
+    }
 }

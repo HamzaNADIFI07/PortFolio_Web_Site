@@ -6,13 +6,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
     margin-top: 7em;
-    width: calc(30% - 40px);
-
-
+    width: 100%;
+    max-width: 400px;
     flex-direction: column;
-
     height: 100%;
-    
+    display: flex;
 }
 
 .projectCard:hover {
@@ -20,13 +18,12 @@
 }
 
 .projectImg {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
     border-radius: 8px;
-
+    margin: 0 auto;
 }
-
-
-
 
 .codeSource, .demo {
     background-color: #4D4040;
@@ -38,19 +35,16 @@
     border-radius: 5px;
     transition: background 0.3s, transform 0.2s;
     font-family: "Academy Engraved LET", sans-serif;
-
     height: 40px;
     line-height: 1.5;
-
     margin-top: auto;
-
 }
-
 
 .codeSource:hover, .demo:hover {
-    background-color: #b5802a;
+    background: linear-gradient(45deg, #e9d3ae, #b5802a);
     transform: scale(1.1);
 }
+
 .projectName{
     font-size: 2em;
     font-family: "Academy Engraved LET", sans-serif;
@@ -60,10 +54,76 @@
     height: 40px;
     line-height: 1.7;
     background-size: auto;
-
+    margin: 10px 0;
 }
+
 .projectDescription{
     font-size: 1.3em;
     font-family: "Academy Engraved LET", sans-serif;
+    margin: 10px 0;
+}
 
+.techno {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.techno span{
+    font-size: 1.3em;
+    font-family: "Academy Engraved LET", sans-serif;
+    background-color: #262c59;
+    color: white;
+    border-radius: 12px;
+    padding: 10px 10px 0px 10px;
+    margin: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .projectCard {
+        margin-top: 3em;
+        padding: 15px;
+    }
+
+    .projectName {
+        font-size: 1.8em;
+    }
+
+    .projectDescription {
+        font-size: 1.1em;
+    }
+
+    .techno span {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projectCard {
+        margin-top: 2em;
+        padding: 10px;
+    }
+
+    .projectName {
+        font-size: 1.5em;
+    }
+
+    .projectDescription {
+        font-size: 1em;
+    }
+
+    .techno span {
+        font-size: 18px;
+        padding: 8px 8px 0px 8px;
+    }
+
+    .codeSource, .demo {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
 }
